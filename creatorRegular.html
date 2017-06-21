@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>And@6eraya</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- FontAwesome CSS -->
+    <link href="fonts/font-awesome/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Quill CSS -->
+    <link href="quill/quill.snow.css" rel="stylesheet">
+    <link href="quill/quill.bubble.cssi" rel="stylesheet">
+
+    <!-- Quill JavaScript -->
+    <script src="quill/quill.core.js"></script>
+    <script src="quill/quill.js"></script>
+    <script src="quill/quill.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a class="label" href="#">Home</a>
+    <a class="label" href="#">Notices</a>
+    <a class="label" href="#">Timetables</a>
+    <a class="label" href="#">Results</a>
+    <a class="label" href="#">Phonebook</a>
+    <a class="label" href="#">Map</a>
+    <a class="label" href="#">User Settings</a>
+</div>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand navbar-left">
+                <span style="font-size:25px;cursor:pointer;color: #eeeeee" onclick="doNav()">And@6eraya</span>
+
+            </a>
+        </div>
+        <!--<div id="navbar" class="navbar-collapse collapse navbar-left">-->
+        <!--<ul class="nav navbar-nav" >-->
+        <!--<li class="active label "><a href="#jumbotron">About</a></li>-->
+        <!--<li class="label "><a href="#rank">Results</a></li>-->
+        <!--<li class="label"><a href="#CVMkr">CV.Mkr</a></li>-->
+        <!--<li class="label "><a href="#MrkMkr">Mrk.Mkr</a></li>-->
+        <!--</ul>-->
+        <!--</div>&lt;!&ndash;/.navbar-collapse &ndash;&gt;-->
+        </ul>
+    </div>
+</nav>
+
+<div id="main">
+    <div class="container" style="margin-top: 100px; ">
+        <label style="background-color: #f1f1f1; padding: 5px 32px 5px 32px; border-radius: 25px; margin-right: 20px;">
+            <a href="creator.html">
+                <i class="fa fa-arrow-left fa-3x fa-fw ">
+                </i>
+            </a>
+        </label>
+        <label style="background-color: #f1f1f1; padding: 5px 32px 5px 32px; border-radius: 25px; margin-right: 20px;">
+            <a href="index.html">
+                <i class="fa fa-navicon fa-3x fa-fw ">
+                </i>
+            </a>
+        </label>
+
+    </div>
+    <div class="container" style="margin-top: 25px; padding: 25px 0px 25px 0px; color: black; background-color: #f1f1f1; text-align: center; border-radius: 25px">
+        <div id="editor">
+            <h1 align="center"><u>Notice</u></h1><br>
+            <p align="center">Main <strong>content</strong> of the intended notice</p>
+            <p><br></p>
+        </div>
+
+        <!-- Initialize Quill editor -->
+        <script>
+            var quill = new Quill('#editor', {
+                theme: 'snow'
+            });
+        </script>
+        <!--<div id="quillTB"></div>-->
+        <!--<div id="quillEdit"></div>-->
+    </div>
+
+    <!-- Create the editor container -->
+
+</div>
+
+
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- JavaScript Animations -->
+<script src="js/animations.js"></script>
+
+</body>
+
+</html>
