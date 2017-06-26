@@ -88,12 +88,12 @@
     <div class="container" style="margin-top: 25px; padding: 25px 0px 25px 0px; color: black; background-color: #f1f1f1; text-align: center; border-radius: 25px">
         <p>Please choose a notice type to create: </p>
         <form action="">
-            <input type="radio" name="noticeType" value="regular"> Regular<br>
-            <input type="radio" name="noticeType" value="temporary"> Temporary<br>
-            <input type="radio" name="noticeType" value="event"> Event<br>
-            <input type="radio" name="noticeType" value="Advertisement"> Advertisement<br>
+            <input type="radio" name="noticeType" value="regular" id="rbReg"> Regular<br>
+            <input type="radio" name="noticeType" value="temporary" id="rbTemp"> Temporary<br>
+            <input type="radio" name="noticeType" value="event" id="rbEvent"> Event<br>
+            <input type="radio" name="noticeType" value="Advertisement" id="rbAD"> Advertisement<br>
             <br>
-           <button type="button">Create new notice</button>
+           <button type="button" onclick="doNew()">Create new notice</button>
         </form>
     </div>
 </div>
@@ -104,6 +104,9 @@
 
 <!-- JavaScript Animations -->
 <script src="js/animations.js"></script>
+
+<!-- JavaScript Animations -->
+<script src="js/creator.js"></script>
 
 </body>
 
