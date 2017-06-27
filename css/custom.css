@@ -90,3 +90,13 @@ body {
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
+
+.dropdown{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.list-group{
+    margin-left: 100px;
+    margin-right: 100px;
+}
