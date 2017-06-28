@@ -2,124 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ad53719-ad0e-4a91-970a-2e5e3bd3f98b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Pe-icon-7-stroke.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Pe-icon-7-stroke.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Pe-icon-7-stroke.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/default-avatar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/faces/face-0.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/faces/face-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/faces/face-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/faces/face-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/faces/face-4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/faces/face-5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/faces/face-6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/faces/face-7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/faces/tim_vector.jpe" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/mask.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/new_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/sidebar-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/sidebar-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/sidebar-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/sidebar-4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/sidebar-5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/tim_80x80.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sandeepa1995.github.io.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crtRegular.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/animate.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/crtRegular.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/demo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/light-bootstrap-dashboard.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/mainNotices.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/material-kit.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/material-kit.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/pe-icon-7-stroke.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Pe-icon-7-stroke.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/loading-bubbles.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap-checkbox-radio-switch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap-datepicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap-notify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap-select.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/chartist.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/crtRegular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery-1.10.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/light-bootstrap-dashboard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/mainNotices.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/material-kit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/material.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/nouislider.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mainNotices.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_alerts.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_buttons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_cards.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_carousel.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_chartist.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_checkbox-radio-switch.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_collapse.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_datepicker.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_dropdown.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_flexisel.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_footers.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_inputs.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_labels.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_media.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_misc.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_modal.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_morphing-buttons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_navbars.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_progress-bars.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_responsive.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_sections.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_sidebar-and-main-panel.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_sliders.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_social-buttons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_tables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_tabs-navs-pagination.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_tags.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_tooltips-and-popovers.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_typography.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/mixins/_buttons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/mixins/_cards.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/mixins/_chartist.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/mixins/_icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/mixins/_inputs.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/mixins/_labels.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/mixins/_morphing-buttons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/mixins/_navbars.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/mixins/_social-buttons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/mixins/_tabs.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/mixins/_transparency.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/lbd/mixins/_vendor-prefixes.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/light-bootstrap-dashboard.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/SemesterProjkt.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/creator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/creatorRegular.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap-theme.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/custom.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/sb-admin.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/animations.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/creator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/creatorRegular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/npm.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/js/bootstrap.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/mainNotices.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -137,8 +21,8 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mainNotices.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mainNotices.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2278">
               <caret line="134" column="71" lean-forward="false" selection-start-line="134" selection-start-column="42" selection-end-line="134" selection-end-column="71" />
@@ -146,7 +30,7 @@
                 <element signature="n#style#0;n#nav#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#9627#9634#0" expanded="true" />
+                <element signature="e#9615#9622#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,7 +39,7 @@
       <file leaf-file-name="crtRegular.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crtRegular.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="858">
+            <state relative-caret-position="17">
               <caret line="149" column="22" lean-forward="false" selection-start-line="149" selection-start-column="22" selection-end-line="149" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -164,7 +48,7 @@
                 <element signature="n#style#0;n#ul#0;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#div#1;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#div#1;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#8845#8851#0" expanded="true" />
+                <element signature="e#8839#8845#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -193,7 +77,7 @@
       <file leaf-file-name="mainNotices.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/mainNotices.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
+            <state relative-caret-position="544">
               <caret line="35" column="1" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -328,6 +212,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -342,8 +228,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -441,12 +325,21 @@
       <workItem from="1498450908578" duration="990000" />
       <workItem from="1498546960717" duration="13401000" />
       <workItem from="1498586944269" duration="86000" />
-      <workItem from="1498587037241" duration="26000" />
+      <workItem from="1498587037241" duration="256000" />
+      <workItem from="1498614726812" duration="68000" />
     </task>
+    <task id="LOCAL-00001" summary="Changed the design">
+      <created>1498587114076</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1498587114076</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40083000" />
+    <option name="totallyTimeSpent" value="40381000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1064" extended-state="6" />
@@ -475,6 +368,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changed the design" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the design" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -533,7 +430,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mainNotices.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2278">
           <caret line="134" column="71" lean-forward="false" selection-start-line="134" selection-start-column="42" selection-end-line="134" selection-end-column="71" />
@@ -541,7 +438,7 @@
             <element signature="n#style#0;n#nav#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#9627#9634#0" expanded="true" />
+            <element signature="e#9615#9622#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -557,7 +454,7 @@
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#div#1;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#1;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#8845#8851#0" expanded="true" />
+            <element signature="e#8839#8845#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -709,7 +606,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/mainNotices.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
+        <state relative-caret-position="544">
           <caret line="35" column="1" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -727,7 +624,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mainNotices.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2278">
           <caret line="134" column="71" lean-forward="false" selection-start-line="134" selection-start-column="42" selection-end-line="134" selection-end-column="71" />
@@ -735,14 +632,14 @@
             <element signature="n#style#0;n#nav#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#9627#9634#0" expanded="true" />
+            <element signature="e#9615#9622#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crtRegular.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
+        <state relative-caret-position="17">
           <caret line="149" column="22" lean-forward="false" selection-start-line="149" selection-start-column="22" selection-end-line="149" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -751,7 +648,7 @@
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#div#1;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#1;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#8845#8851#0" expanded="true" />
+            <element signature="e#8839#8845#0" expanded="true" />
           </folding>
         </state>
       </provider>
