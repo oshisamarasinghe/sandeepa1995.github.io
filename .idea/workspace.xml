@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3ad53719-ad0e-4a91-970a-2e5e3bd3f98b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crtRegular.html" afterPath="$PROJECT_DIR$/crtRegular.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/crtRegular.css" afterPath="$PROJECT_DIR$/css/crtRegular.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mainNotices.css" afterPath="$PROJECT_DIR$/css/mainNotices.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/crtRegular.js" afterPath="$PROJECT_DIR$/js/crtRegular.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,11 +21,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="135" column="140" lean-forward="true" selection-start-line="135" selection-start-column="16" selection-end-line="135" selection-end-column="140" />
+            <state relative-caret-position="2170">
+              <caret line="242" column="28" lean-forward="false" selection-start-line="242" selection-start-column="28" selection-end-line="242" selection-end-column="28" />
               <folding>
                 <element signature="n#style#0;n#nav#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -50,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="crtRegular.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="crtRegular.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crtRegular.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="274" column="105" lean-forward="false" selection-start-line="274" selection-start-column="105" selection-end-line="274" selection-end-column="105" />
+            <state relative-caret-position="1317">
+              <caret line="246" column="31" lean-forward="true" selection-start-line="246" selection-start-column="24" selection-end-line="246" selection-end-column="31" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -190,11 +186,11 @@
         <option value="$PROJECT_DIR$/js/mainNotices.js" />
         <option value="$PROJECT_DIR$/mainNotices.html" />
         <option value="$PROJECT_DIR$/css/material-kit.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/mainNotices.css" />
         <option value="$PROJECT_DIR$/css/crtRegular.css" />
         <option value="$PROJECT_DIR$/js/crtRegular.js" />
         <option value="$PROJECT_DIR$/crtRegular.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -235,6 +231,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sandeepa1995.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sandeepa1995.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sandeepa1995.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -340,7 +350,7 @@
       <workItem from="1498586944269" duration="86000" />
       <workItem from="1498587037241" duration="256000" />
       <workItem from="1498614726812" duration="6999000" />
-      <workItem from="1498641060688" duration="546000" />
+      <workItem from="1498641060688" duration="729000" />
     </task>
     <task id="LOCAL-00001" summary="Changed the design">
       <created>1498587114076</created>
@@ -356,11 +366,18 @@
       <option name="project" value="LOCAL" />
       <updated>1498614853577</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Changed look">
+      <created>1498641628909</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1498641628909</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47858000" />
+    <option name="totallyTimeSpent" value="48041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1064" extended-state="6" />
@@ -393,7 +410,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changed the design" />
     <MESSAGE value="Changed main to index to host on github" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed main to index to host on github" />
+    <MESSAGE value="Changed look" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed look" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -645,19 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="135" column="140" lean-forward="true" selection-start-line="135" selection-start-column="16" selection-end-line="135" selection-end-column="140" />
-          <folding>
-            <element signature="n#style#0;n#nav#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#9585#9592#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/mainNotices.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1045">
@@ -668,8 +673,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crtRegular.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="274" column="105" lean-forward="false" selection-start-line="274" selection-start-column="105" selection-end-line="274" selection-end-column="105" />
+        <state relative-caret-position="1317">
+          <caret line="246" column="31" lean-forward="true" selection-start-line="246" selection-start-column="24" selection-end-line="246" selection-end-column="31" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -685,6 +690,19 @@
             <element signature="n#style#0;n#label#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#11413#11419#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2170">
+          <caret line="242" column="28" lean-forward="false" selection-start-line="242" selection-start-column="28" selection-end-line="242" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#9585#9592#0" expanded="true" />
           </folding>
         </state>
       </provider>
