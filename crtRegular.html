@@ -17,8 +17,8 @@
     <!-- Animation library for notifications   -->
     <link href="css/animate.min.css" rel="stylesheet"/>
 
-    <!--&lt;!&ndash;CSS for material kit&ndash;&gt;-->
-    <!--<link href="css/material-kit.css" rel="stylesheet"/>-->
+    <!--CSS for material kit-->
+    <link href="css/material-kit.css" rel="stylesheet"/>
 
     <!--  Light Bootstrap Table core CSS    -->
     <link href="css/light-bootstrap-dashboard.css" rel="stylesheet"/>
@@ -40,13 +40,15 @@
 
     <!--js for the page-->
     <script src="js/crtRegular.js"></script>
+
+
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="css/pe-icon-7-stroke.css" rel="stylesheet"/>
 
 </head>
-<body>
+<body onload="genText()">
 
 <div class="wrapper">
     <div class="sidebar" data-color="purple" data-image="img/sidebar-5.jpg">
@@ -140,28 +142,68 @@
         </nav>
 
 
-        <div class="content">
-            <div class="container" >
-                <div style="width: 25%">
-                    <div class=1"form-group label-f">
-                        <label class="control-label">Title</label>
-                        <input type="email" class="form-control"><br>
+        <div class="content" >
+        <div class="container" style=" padding: 25px 25px 25px 25px; color: black; background-color: #f1f1f1; border-radius: 25px">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group label-floating is-empty" style="margin-top: 0%;">
+                        <label class="control-label" style="color: black;">Enter Title :</label>
+                        <input type="email" class="form-control">
+                        <span class="material-input"></span>
                     </div>
                 </div>
-            <div class="togglebutton">
-                <label>
-                    <input type="checkbox" checked="">
-                    Toggle is on
-                </label>
+                <div class="col-sm-3 pull-right">
+                    <div class="togglebutton">
+                        <label>
+                            <input type="checkbox" id="cbType" onclick="doType()">
+                            <span id="typeText" style="color: black;">Make a General Notice</span>
+                        </label>
+
+                        <script>
+                            function genText(){
+                                document.getElementById("typeText").innerHTML="Make a General Notice";
+                            }
+
+                            function spcText(){
+                                document.getElementById("typeText").innerHTML="Make a Specific Notice";
+                            }
+
+                            function doType() {
+                                if (document.getElementById("cbType").checked)
+                                {
+                                    spcText();
+                                    showSpeci();
+                                }
+                                else
+                                {
+                                    genText();
+                                    hideSpeci();
+                                }
+
+                            }
+
+                            function showSpeci() {
+                                document.getElementById("specificOptions").style.display='block';
+                            }
+
+                            function hideSpeci() {
+                                document.getElementById("specificOptions").style.display='none';
+                            }
+
+                        </script>
+
+                    </div>
+                </div>
+
+
             </div>
-            </div>
 
 
-
-            <div class="container" >
+            <div class="container" style="width: 75%">
                 <div id="editor">
                     <h1 align="center"><u>Notice</u></h1><br>
-                    <p align="center">Main <strong>content</strong> of the intended notice</p>
+                    <p align="center">Main <strong>content</strong> of the intended notice</p><br><br>
+                    <p align="right">Sender</p>
                     <p><br></p>
                 </div>
 
@@ -175,44 +217,62 @@
                 <!--<div id="quillEdit"></div>-->
             </div>
 
-
-            <div class="container" >
-            <input type="radio" name="noticeTarget" value="general" id="rbGen" onchange="doTarget()">General
-            <input type="radio" name="noticeTarget" value="specialized" id="rbSpc" style="margin-left: 50%" onchange="doTarget()"> Specific<br>
         </div>
+
         <div class="container" id="specificOptions" style="margin-top: 25px; padding: 25px 0px 25px 0px; color: black; background-color: #f1f1f1;  border-radius: 25px; display: none">
-            <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="margin-left: 50px">Choose Department
-                    <span class="caret"></span></button>
-                <ul class="dropdown-menu" style="margin-left: 50px;" >
-                    <li><a href="#">CSE</a></li>
-                    <li><a href="#">Civil</a></li>
-                    <li><a href="#">Chemical</a></li>
-                </ul>
+            <div class="container" style="margin-bottom: 10px;">
+                <div class="dropdown col-sm-3">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="margin-left: 50px">Choose Department
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu" style="margin-left: 50px;" >
+                        <li><a href="#">CSE</a></li>
+                        <li><a href="#">Civil</a></li>
+                        <li><a href="#">Chemical</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown col-sm-3">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="margin-left: 50px">Choose Batch
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu" style="margin-left: 50px;" >
+                        <li><a href="#">Staff</a></li>
+                        <li><a href="#">Batch15</a></li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="margin-left: 50px">Choose Batch
-                    <span class="caret"></span></button>
-                <ul class="dropdown-menu" style="margin-left: 50px;" >
-                    <li><a href="#">Staff</a></li>
-                    <li><a href="#">Batch15</a></li>
-                </ul>
+            <div class="container" style="width: 95%">
+                <div class="list-group">
+                    <label style="color: black">Custom Selection</label>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="optionsCheckboxes" checked>
+                            CheckBox1
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="optionsCheckboxes" checked>
+                            CheckBox2
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="optionsCheckboxes" checked>
+                            CheckBox3
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="optionsCheckboxes" checked>
+                            CheckBox4
+                        </label>
+                    </div>
+                </div>
             </div>
-
-            <div class="list-group">
-                <label>Custom Selection</label>
-                <ul>
-                    <li><input type="checkbox"> checkbox 1</li>
-                    <li><input type="checkbox"> checkbox 2</li>
-                    <li><input type="checkbox"> checkbox 3</li>
-                    <li><input type="checkbox"> checkbox 4</li>
-                </ul>
-            </div>
-
         </div>
+
         <div class="container" style="margin-top: 25px; padding: 25px 0px 25px 0px; color: black; background-color: #f1f1f1; text-align: center; border-radius: 25px">
-            <button type="button" onclick="finish()" lo>Create new notice</button>
+            <button class="btn btn-danger" type="button" onclick="finish()" lo>Create new notice</button>
         </div>
         </div>
 
@@ -256,6 +316,8 @@
 <!--JS for this page-->
 <script src="js/mainNotices.js"></script>
 
+<!--js for the page-->
+<script src="js/crtRegular.js"></script>
 <!--<script type="text/javascript">-->
 <!--$(document).ready(function () {-->
 

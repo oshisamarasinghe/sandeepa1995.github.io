@@ -1,17 +1,6 @@
 /**
  * Created by Damitha on 6/27/2017.
  */
-function doTarget() {
-    if (document.getElementById("rbSpc").checked)
-    {
-        showSpeci();
-    }
-    else
-    {
-        hideSpeci();
-    }
-
-}
 
 function showSpeci() {
     document.getElementById("specificOptions").style.display='block';
@@ -26,4 +15,26 @@ function finish() {
     {
         location.href='index.html';
     }
+}
+
+function genText(){
+    document.getElementById("typeText").innerHTML="Make a General Notice";
+}
+
+function spcText(){
+    document.getElementById("typeText").innerHTML="Make a Specific Notice";
+}
+
+function doType() {
+    if (document.getElementById("cbType").checked)
+    {
+        spcText();
+        showSpeci()
+    }
+    else
+    {
+        genText();
+        hideSpeci()
+    }
+
 }

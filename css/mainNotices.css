@@ -82,8 +82,16 @@
     font-size: 28px;
 }
 
-.navbar-default{
+.navbar.navbar-default{
     background-color: white;
+    height: 62.5px;
 }
+
+
+.radio{
+    cursor: pointer;
+ }
+
+
 
 
