@@ -9,6 +9,5 @@ function Notice(iD,title,content,target,duration,type) {
     this.target=target;
     this.duration=duration;
 
-
-
 }
+
