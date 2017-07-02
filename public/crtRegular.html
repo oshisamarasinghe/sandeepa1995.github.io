@@ -30,13 +30,17 @@
     <!--<link href="css/demo.css" rel="stylesheet"/>-->
 
     <!-- Quill CSS -->
+    <link href="quill/quill.core.css" rel="stylesheet">
     <link href="quill/quill.snow.css" rel="stylesheet">
-    <link href="quill/quill.bubble.cssi" rel="stylesheet">
+    <!--<link href="quill/quill.bubble.css" rel="stylesheet">-->
 
     <!-- Quill JavaScript -->
-    <script src="quill/quill.core.js"></script>
     <script src="quill/quill.js"></script>
     <script src="quill/quill.min.js"></script>
+
+    <!--Delta.ja-->
+    <script src="js/delta.js"></script>
+    <script src="js/op.js"></script>
 
     <!--js for the page-->
     <script src="js/crtRegular.js"></script>
@@ -150,7 +154,7 @@
                 <div class="col-sm-4">
                     <div class="form-group label-floating is-empty" style="margin-top: 0%;">
                         <label class="control-label" style="color: black;">Enter Title :</label>
-                        <input id="inputTitle" type="email" class="form-control">
+                        <input id="inputTitle" type="text" class="form-control">
                         <span class="material-input"></span>
                     </div>
                 </div>
@@ -201,22 +205,55 @@
             </div>
 
 
-            <div class="container" style="width: 75%">
-                <div id="editor">
+            <div class="container" style="width: 95%">
+                <!--<div id="editor">-->
+                    <!--<h1 align="center"><u>Notice</u></h1><br>-->
+                    <!--<p align="center">Main <strong>content</strong> of the intended notice</p><br><br>-->
+                    <!--<p align="right">Sender</p>-->
+                    <!--<p><br></p>-->
+                <!--</div>-->
+
+                <!--&lt;!&ndash; Initialize Quill editor &ndash;&gt;-->
+                <!--<script>-->
+                    <!--var quill = new Quill('#editor', {-->
+                        <!--theme: 'snow'-->
+                    <!--});-->
+                <!--</script>-->
+                <!--<div id="quillTB"></div>-->
+                <div id="quillEdit">
                     <h1 align="center"><u>Notice</u></h1><br>
                     <p align="center">Main <strong>content</strong> of the intended notice</p><br><br>
-                    <p align="right">Sender</p>
+                    <p align="right" style="padding-right: 20px">Sender</p>
                     <p><br></p>
                 </div>
 
-                <!-- Initialize Quill editor -->
                 <script>
-                    var quill = new Quill('#editor', {
-                        theme: 'snow'
+                    var toolbarOptions=[
+                        [{ 'font': [] }],
+                        [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+                        ['bold','italic','underline'],
+                        [{ 'align': [] }],
+                        [{ 'color': [] }, { 'background': [] }],
+                        [{'list':'ordered'},{'list':'bullet'}],
+                        [{'script':'sub'},{'script':'super'}],
+                        ['link','image','video','formula']
+                    ];
+
+                    var quill = new Quill('#quillEdit', {
+                        modules : {
+                            toolbar: toolbarOptions
+                        },
+
+                        theme:'snow'
                     });
+
+                    function psome() {
+                        var delta=quill1.getContents();
+                        quill.setContents(delta);
+                    }
+
+
                 </script>
-                <!--<div id="quillTB"></div>-->
-                <!--<div id="quillEdit"></div>-->
             </div>
 
         </div>
@@ -273,9 +310,45 @@
             </div>
         </div>
 
-        <div class="container" style="margin-top: 25px; padding: 25px 0px 25px 0px; color: black; background-color: #f1f1f1; text-align: center; border-radius: 25px">
-            <button class="btn btn-danger" type="button" onclick="finish()" lo>Create new notice</button>
+        <div class="contaiiner" style="margin-top: 25px; padding: 25px 0px 25px 0px; color: black; background-color: #f1f1f1; text-align: center; border-radius: 25px">
+            <button id="finish" class="btn btn-danger" type="button" onclick="finish()" >Create new notice</button>
         </div>
+
+            <!--<div class="container" style="width: 95% ;padding: 25px 25px 25px 25px; color: black; background-color: #f1f1f1; border-radius: 25px; margin-top: 50px">-->
+                <!--<button id="finish1" class="btn btn-danger" type="button" onclick="psome()">Create new notice</button>-->
+                <!--<div id="quillTB"></div>-->
+                <!--<div id="quillEdit"></div>-->
+
+                <!--<script>-->
+                    <!--var toolbarOptions=[-->
+                        <!--[{ 'font': [] }],-->
+                        <!--[{ 'header': [1, 2, 3, 4, 5, 6, false] }],-->
+                        <!--['bold','italic','underline'],-->
+                        <!--[{ 'align': [] }],-->
+                        <!--[{ 'color': [] }, { 'background': [] }],-->
+                        <!--[{'list':'ordered'},{'list':'bullet'}],-->
+                        <!--[{'script':'sub'},{'script':'super'}],-->
+                        <!--['link','image','video','formula']-->
+                    <!--];-->
+
+                    <!--var quill1 = new Quill('#quillEdit', {-->
+                        <!--modules : {-->
+                            <!--toolbar: toolbarOptions-->
+                        <!--},-->
+
+                        <!--theme:'snow'-->
+                    <!--});-->
+
+                    <!--function psome() {-->
+                        <!--var delta=quill1.getContents();-->
+                        <!--quill.setContents(delta);-->
+                    <!--}-->
+
+
+                <!--</script>-->
+            <!--</div>-->
+
+
         </div>
 
         <footer class="footer">
@@ -296,7 +369,7 @@
 </body>
 
 <!--   Core JS Files   -->
-<script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
 
 <!--  Checkbox, Radio & Switch Plugins -->

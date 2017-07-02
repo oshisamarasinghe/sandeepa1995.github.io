@@ -17,7 +17,7 @@ function finish() {
     {
         location.href='index.html';
         var newTitile = document.getElementById("inputTitle").value;
-        var newContent = quill.getText();
+        var newContent = quill.getContents();
 
         socket.emit('createNotice',{
             title: newTitile,
