@@ -4,6 +4,7 @@
 // // Get the modal
 var modal = document.getElementById('newTypeModal');
 // var numNot=0;
+var indNum=0;
 
 // // Get the button that opens the modal
 // var btn = document.getElementById("myBtn");
@@ -26,7 +27,10 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}
+};
+
+
+var arrayDetailNotices=[];
 
 function doNew() {
     if (document.getElementById("nTRBReg").checked)
@@ -87,7 +91,31 @@ socket.on('connect',function(){
     // loadList();
 });
 
-socket.on('loadNotices');
+function  refresh() {
+    arrayDetailNotices=[];
+    indNum=0;
+    document.getElementById("noticeDetailTable").innerHTML="";
+    socket.emit('refreshNotices',{
+        index:loggedID
+    });
+}
+
+socket.on('loadNoticesList',function(noticeList){
+    for (var indx = 0; indx < noticeList.intended.length; ++indx) {
+        console.log(noticeList.intended[indx]);
+        socket.emit('getNDetails',{
+            iD:noticeList.intended[indx]
+        });
+    }
+});
+
+socket.on('giveNDetails',(noticeDetails)=>{
+    console.log(noticeDetails);
+    var noticeDetailItem = "<tr data-toggle='modal' data-target='#displayModal' style='cursor: pointer' onclick='clickDetail("+indNum+")'><td>"+noticeDetails.sender+"</td><td>"+noticeDetails.title+"</td> <td>"+noticeDetails.date+"</td> </tr>";
+    $("#noticeDetailTable").append(noticeDetailItem);
+    indNum+=1;
+    arrayDetailNotices.push(noticeDetails.id);
+});
 
 socket.on('disconnect',function(){
     console.log('Disconnected from server');
@@ -97,4 +125,26 @@ socket.on('disconnect',function(){
 socket.on('newNotice',function(notice) {
     console.log('New Notice has Arrived!',notice);
     // location.href='index.html';
-})
+});
+
+function clickDetail(ind) {
+    console.log(arrayDetailNotices[ind]);
+    socket.emit('getNoticeDis',{
+        iD:arrayDetailNotices[ind]
+    });
+}
+
+socket.on('giveNoticeDis',(noticeDetails)=>{
+    document.getElementById('noticeTitle').innerHTML="Title : ";
+    document.getElementById('noticeSender').innerHTML="Sender : ";
+    document.getElementById('noticeDate').innerHTML="Date : ";
+    console.log(noticeDetails);
+    quillD.setContents(noticeDetails.content);
+    notTitle=noticeDetails.title;
+    $("#noticeTitle").append(notTitle);
+    notSender=noticeDetails.sender;
+    $("#noticeSender").append(notSender);
+    notDate=noticeDetails.date;
+    $("#noticeDate").append(notDate);
+});
+

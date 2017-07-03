@@ -38,12 +38,8 @@
     <script src="quill/quill.js"></script>
     <script src="quill/quill.min.js"></script>
 
-    <!--Delta.ja-->
-    <script src="js/delta.js"></script>
-    <script src="js/op.js"></script>
-
-    <!--js for the page-->
-    <script src="js/crtRegular.js"></script>
+    <!--&lt;!&ndash;js for the page&ndash;&gt;-->
+    <!--<script src="js/crtRegular.js"></script>-->
 
     <!-- Animate CSS -->
     <script src="css/animate.css"></script>
@@ -56,6 +52,9 @@
 </head>
 <body onload="genText()">
 <script src="/socket.io/socket.io.js"></script>
+<script>
+    var loggedID="150359E";
+</script>
 <div class="wrapper">
     <div class="sidebar" data-color="purple" data-image="img/sidebar-5.jpg">
 
@@ -154,7 +153,7 @@
                 <div class="col-sm-4">
                     <div class="form-group label-floating is-empty" style="margin-top: 0%;">
                         <label class="control-label" style="color: black;">Enter Title :</label>
-                        <input id="inputTitle" type="text" class="form-control">
+                        <input id="inputTitle" type="text" class="form-control" onchange="setTitle()">
                         <span class="material-input"></span>
                     </div>
                 </div>
@@ -223,8 +222,7 @@
                 <div id="quillEdit">
                     <h1 align="center"><u>Notice</u></h1><br>
                     <p align="center">Main <strong>content</strong> of the intended notice</p><br><br>
-                    <p align="right" style="padding-right: 20px">Sender</p>
-                    <p><br></p>
+                    <p align="right" style="padding-right: 20px">Sender</p><br>
                 </div>
 
                 <script>
@@ -280,7 +278,7 @@
             </div>
 
             <div class="container" style="width: 95%">
-                <div class="list-group">
+                <div class="list-group" id="checkGrp">
                     <label style="color: black">Custom Selection</label>
                     <div class="checkbox">
                         <label>
@@ -388,11 +386,15 @@
 <script src="js/material-kit.js"></script>
 <script src="js/material.min.js"></script>
 
-<!--JS for this page-->
-<script src="js/mainNotices.js"></script>
-
 <!--js for the page-->
 <script src="js/crtRegular.js"></script>
+
+<script>
+    window.onload=function(){
+        getCreator();
+        loadAll();
+    };
+</script>
 <!--<script type="text/javascript">-->
 <!--$(document).ready(function () {-->
 
