@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+    <title>And@6eraya</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+    <meta name="viewport" content="width=device-width"/>
+
+
+    <!-- Bootstrap core CSS     -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Animation library for notifications   -->
+    <link href="css/animate.min.css" rel="stylesheet"/>
+
+    <!--CSS for material kit-->
+    <link href="css/material-kit.css" rel="stylesheet"/>
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="css/light-bootstrap-dashboard.css" rel="stylesheet"/>
+
+    <!--  CSS for the current Page  -->
+    <link href="css/crtRegular.css" rel="stylesheet"/>
+
+    <!--&lt;!&ndash;  CSS for the current Page  &ndash;&gt;-->
+    <!--<link href="css/demo.css" rel="stylesheet"/>-->
+
+    <!-- Quill CSS -->
+    <link href="quill/quill.core.css" rel="stylesheet">
+    <link href="quill/quill.snow.css" rel="stylesheet">
+    <!--<link href="quill/quill.bubble.css" rel="stylesheet">-->
+
+    <!-- Quill JavaScript -->
+    <script src="quill/quill.js"></script>
+    <script src="quill/quill.min.js"></script>
+
+    <!--&lt;!&ndash;js for the page&ndash;&gt;-->
+    <!--<script src="js/crtRegular.js"></script>-->
+
+    <!-- Animate CSS -->
+    <script src="css/animate.css"></script>
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="css/pe-icon-7-stroke.css" rel="stylesheet"/>
+
+</head>
+<body onload="genText()">
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var loggedEditID=sessionStorage.getItem('loggedID');
+</script>
+<div class="wrapper">
+    <div class="sidebar" data-color="purple" data-image="img/sidebar-5.jpg">
+
+        <div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="#" class="simple-text">
+                    And@6eraya
+                </a>
+            </div>
+
+            <ul class="nav">
+                <!--<li class="active">-->
+                <!--<a href="lecturer-main.html">-->
+                <!--<i class="pe-7s-home"></i>-->
+                <!--<p>Home</p>-->
+                <!--</a>-->
+                <!--</li>-->
+                <li>
+                    <a href="index.html">
+                        <i class="pe-7s-notebook"></i>
+                        <p>Notices</p>
+                    </a>
+                </li>
+                <!--<li>-->
+                <!--<a href="table.html">-->
+                <!--<i class="pe-7s-upload"></i>-->
+                <!--<p>Result</p>-->
+                <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href="notifications.html">-->
+                <!--<i class="pe-7s-bell"></i>-->
+                <!--<p>Notifications</p>-->
+                <!--</a>-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#navigation-example-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--<a class="navbar-brand" href="#"></a>-->
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-globe"></i>
+                                <b class="caret"></b>
+                                <span class="notification">5</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Notification 1</a></li>
+                                <li><a href="#">Notification 2</a></li>
+                                <li><a href="#">Notification 3</a></li>
+                                <li><a href="#">Notification 4</a></li>
+                                <li><a href="#">Another notification</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="">
+                                Account
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Log out
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="content" >
+            <div class="container" style=" padding: 25px 25px 25px 25px; color: black; background-color: #f1f1f1; border-radius: 25px">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group label-floating is-empty" style="margin-top: 0%;">
+                            <label class="control-label" style="color: black;"></label>
+                            <input id="inputEditTitle" type="text" class="form-control">
+                            <span class="material-input"></span>
+                        </div>
+                    </div>
+                    <!--<div class="col-sm-3 pull-right">-->
+                        <!--<div class="togglebutton">-->
+                            <!--<label>-->
+                                <!--<input type="checkbox" id="cbType" onclick="doType()">-->
+                                <!--<span id="typeText" style="color: black;">Make a General Notice</span>-->
+                            <!--</label>-->
+
+                            <!--<script>-->
+                                <!--function genText(){-->
+                                    <!--document.getElementById("typeText").innerHTML="Make a General Notice";-->
+                                <!--}-->
+
+                                <!--function spcText(){-->
+                                    <!--document.getElementById("typeText").innerHTML="Make a Specific Notice";-->
+                                <!--}-->
+
+                                <!--function doType() {-->
+                                    <!--//var sectionSelect = document.getElementById("specificOptions");-->
+                                    <!--if (document.getElementById("cbType").checked)-->
+                                    <!--{-->
+                                        <!--spcText();-->
+                                        <!--showSpeci();-->
+                                        <!--//sectionSelect.setAttribute("class","container animated fadeInDown");-->
+                                    <!--}-->
+                                    <!--else-->
+                                    <!--{-->
+                                        <!--genText();-->
+                                        <!--hideSpeci();-->
+                                        <!--//sectionSelect.setAttribute("class","container animated fadeOutUp");-->
+                                    <!--}-->
+
+                                <!--}-->
+
+                                <!--function showSpeci() {-->
+                                    <!--document.getElementById("specificOptions").style.display='block';-->
+                                <!--}-->
+
+                                <!--function hideSpeci() {-->
+                                    <!--document.getElementById("specificOptions").style.display='none';-->
+                                <!--}-->
+
+                            <!--</script>-->
+
+                        <!--</div>-->
+                    <!--</div>-->
+
+
+                </div>
+
+
+                <div class="container" style="width: 95%">
+                    <!--<div id="editor">-->
+                    <!--<h1 align="center"><u>Notice</u></h1><br>-->
+                    <!--<p align="center">Main <strong>content</strong> of the intended notice</p><br><br>-->
+                    <!--<p align="right">Sender</p>-->
+                    <!--<p><br></p>-->
+                    <!--</div>-->
+
+                    <!--&lt;!&ndash; Initialize Quill editor &ndash;&gt;-->
+                    <!--<script>-->
+                    <!--var quill = new Quill('#editor', {-->
+                    <!--theme: 'snow'-->
+                    <!--});-->
+                    <!--</script>-->
+                    <!--<div id="quillTB"></div>-->
+                    <div id="quilledtEdit">
+                        <h1 align="center"><u>Notice</u></h1><br>
+                        <p align="center">Main <strong>content</strong> of the intended notice</p><br><br>
+                        <p align="right" style="padding-right: 20px">Sender</p><br>
+                    </div>
+
+                    <script>
+                        var toolbarOptions=[
+                            [{ 'font': [] }],
+                            [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+                            ['bold','italic','underline'],
+                            [{ 'align': [] }],
+                            [{ 'color': [] }, { 'background': [] }],
+                            [{'list':'ordered'},{'list':'bullet'}],
+                            [{'script':'sub'},{'script':'super'}],
+                            ['link','image','video','formula']
+                        ];
+
+                        var quilledt = new Quill('#quilledtEdit', {
+                            modules : {
+                                toolbar: toolbarOptions
+                            },
+
+                            theme:'snow'
+                        });
+
+                        function psome() {
+                            var delta=quill1.getContents();
+                            quill.setContents(delta);
+                        }
+
+
+                    </script>
+                </div>
+
+            </div>
+
+            <!--<div class="container animated fadeInDown" id="specificOptions" style="margin-top: 25px; padding: 25px 0px 25px 0px; color: black; background-color: #f1f1f1;  border-radius: 25px; display: none">-->
+                <!--<div class="container" style="margin-bottom: 10px;">-->
+                    <!--<div class="dropdown col-sm-3">-->
+                        <!--<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="margin-left: 50px">Choose Department-->
+                            <!--<span class="caret"></span></button>-->
+                        <!--<ul class="dropdown-menu" style="margin-left: 50px;" >-->
+                            <!--<li><a href="#">All</a></li>-->
+                            <!--<li><a href="#">CSE</a></li>-->
+                            <!--<li><a href="#">Civil</a></li>-->
+                            <!--<li><a href="#">Chemical</a></li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                    <!--<div class="dropdown col-sm-3">-->
+                        <!--<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="margin-left: 50px">Choose Batch-->
+                            <!--<span class="caret"></span></button>-->
+                        <!--<ul class="dropdown-menu" style="margin-left: 50px;" >-->
+                            <!--<li><a href="#">All</a></li>-->
+                            <!--<li><a href="#">Staff</a></li>-->
+                            <!--<li><a href="#">Students</a></li>-->
+                            <!--<li><a href="#">2015</a></li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--&lt;!&ndash;<div class="container" style="width: 95%">&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="list-group" id="checkGrp">&ndash;&gt;-->
+                <!--&lt;!&ndash;<label style="color: black">Custom Selection</label>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="checkbox">&ndash;&gt;-->
+                <!--&lt;!&ndash;<label>&ndash;&gt;-->
+                <!--&lt;!&ndash;<input type="checkbox" name="optionsCheckboxes" checked>&ndash;&gt;-->
+                <!--&lt;!&ndash;CheckBox1&ndash;&gt;-->
+                <!--&lt;!&ndash;</label>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="checkbox">&ndash;&gt;-->
+                <!--&lt;!&ndash;<label>&ndash;&gt;-->
+                <!--&lt;!&ndash;<input type="checkbox" name="optionsCheckboxes" checked>&ndash;&gt;-->
+                <!--&lt;!&ndash;CheckBox2&ndash;&gt;-->
+                <!--&lt;!&ndash;</label>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="checkbox">&ndash;&gt;-->
+                <!--&lt;!&ndash;<label>&ndash;&gt;-->
+                <!--&lt;!&ndash;<input type="checkbox" name="optionsCheckboxes" checked>&ndash;&gt;-->
+                <!--&lt;!&ndash;CheckBox3&ndash;&gt;-->
+                <!--&lt;!&ndash;</label>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="checkbox">&ndash;&gt;-->
+                <!--&lt;!&ndash;<label>&ndash;&gt;-->
+                <!--&lt;!&ndash;<input type="checkbox" name="optionsCheckboxes" checked>&ndash;&gt;-->
+                <!--&lt;!&ndash;CheckBox4&ndash;&gt;-->
+                <!--&lt;!&ndash;</label>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--<div class="card">-->
+                    <!--<div class="content table-responsive table-full-width">-->
+                        <!--<table class="table table-hover table-striped">-->
+                            <!--<thead>-->
+                            <!--<tr>-->
+                                <!--<th></th>-->
+                                <!--<th>Index No.</th>-->
+                                <!--<th>Name</th>-->
+                                <!--<th>Deparment</th>-->
+                                <!--<th>Batch</th>-->
+                                <!--<th>Type</th>-->
+                            <!--</tr></thead>-->
+                            <!--<tbody id="checkGrp" >-->
+                            <!--</tbody>-->
+                        <!--</table>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <div class="contaiiner" style="margin-top: 25px; padding: 25px 0px 25px 0px; color: black; background-color: #f1f1f1; text-align: center; border-radius: 25px">
+                <button id="finish" class="btn btn-danger" type="button" onclick="finishEdit()" >Create new notice</button>
+            </div>
+
+            <!--<div class="container" style="width: 95% ;padding: 25px 25px 25px 25px; color: black; background-color: #f1f1f1; border-radius: 25px; margin-top: 50px">-->
+            <!--<button id="finish1" class="btn btn-danger" type="button" onclick="psome()">Create new notice</button>-->
+            <!--<div id="quillTB"></div>-->
+            <!--<div id="quillEdit"></div>-->
+
+            <!--<script>-->
+            <!--var toolbarOptions=[-->
+            <!--[{ 'font': [] }],-->
+            <!--[{ 'header': [1, 2, 3, 4, 5, 6, false] }],-->
+            <!--['bold','italic','underline'],-->
+            <!--[{ 'align': [] }],-->
+            <!--[{ 'color': [] }, { 'background': [] }],-->
+            <!--[{'list':'ordered'},{'list':'bullet'}],-->
+            <!--[{'script':'sub'},{'script':'super'}],-->
+            <!--['link','image','video','formula']-->
+            <!--];-->
+
+            <!--var quill1 = new Quill('#quillEdit', {-->
+            <!--modules : {-->
+            <!--toolbar: toolbarOptions-->
+            <!--},-->
+
+            <!--theme:'snow'-->
+            <!--});-->
+
+            <!--function psome() {-->
+            <!--var delta=quill1.getContents();-->
+            <!--quill.setContents(delta);-->
+            <!--}-->
+
+
+            <!--</script>-->
+            <!--</div>-->
+
+
+        </div>
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <p class="copyright pull-right">
+                    &copy; 2017 <a href="#">Smart Notice Board</a> | CERIS
+                </p>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+
+
+
+
+</body>
+
+<!--   Core JS Files   -->
+<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+<!--&lt;!&ndash;  Checkbox, Radio & Switch Plugins &ndash;&gt;-->
+<!--<script src="js/bootstrap-checkbox-radio-switch.js"></script>-->
+
+<!--&lt;!&ndash;  Charts Plugin &ndash;&gt;-->
+<!--<script src="js/chartist.min.js"></script>-->
+
+<!--&lt;!&ndash;  Notifications Plugin    &ndash;&gt;-->
+<!--<script src="js/bootstrap-notify.js"></script>-->
+
+<!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+<script src="js/light-bootstrap-dashboard.js"></script>
+
+<!--JS for material-->
+<script src="js/material-kit.js"></script>
+<script src="js/material.min.js"></script>
+
+<!--js for the page-->
+<script src="js/editRegular.js"></script>
+
+<script>
+    window.onload=function(){
+        getCreator();
+        //console.log(sessionStorage.getItem('editID'));
+        loadAll();
+        getEdtNotice();
+    };
+</script>
+<!--<script type="text/javascript">-->
+<!--$(document).ready(function () {-->
+
+<!--//        	demo.initChartist();-->
+
+<!--$.notify({-->
+<!--icon: 'pe-7s-gift',-->
+<!--message: "Welcome to <b>Smart Notice Board</b>"-->
+
+<!--}, {-->
+<!--type: 'info',-->
+<!--timer: 4000-->
+<!--});-->
+
+<!--});-->
+<!--</script>-->
+
+</html>

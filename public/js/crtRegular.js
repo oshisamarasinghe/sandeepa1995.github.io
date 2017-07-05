@@ -4,6 +4,9 @@
 
 var socket=io();
 var thisuser;
+var targetgrp=[];
+var alltargets=[];
+var checkNum=0;
 
 function showSpeci() {
     document.getElementById("specificOptions").style.display='block';
@@ -23,7 +26,10 @@ function finish() {
         socket.emit('createNotice',{
             title: newTitile,
             content: newContent,
-            sender:"Damitha Lenadora"
+            sender:thisuser.name,
+            senderID: loggedID,
+            receivers: targetgrp,
+            approver:sessionStorage.getItem('approverID')
         });
     }
 }
@@ -57,7 +63,7 @@ function  getCreator() {
 }
 
 socket.on('giveNCreator',(user)=>{
-    console.log('Got User',user);
+    //console.log('Got User',user);
     //var senderName='<p align="right" style="padding-right: 20px">'+user.name+'</p><p align="right" style="padding-right: 20px">'+user.typeO +' - '+user.batch.department +' '+ user.batch.year +'<br></p>'
     // $("#quillEdit").append(senderName);
     thisuser=user;
@@ -69,15 +75,17 @@ socket.on('giveNCreator',(user)=>{
     quill.formatText(11, 9, {'bold':true});
     quill.formatLine(8, 9, {'align': 'center'});
     quill.formatLine(quill.getLength()- position.length - 1, quill.getLength()-1-1, {'align': 'right'});
+    //console.log(quill.getLength()-position.length);
 
 });
 
 function setTitle() {
-    if ((quill.getLength() == 80)&&quill.getText().slice(0,6)=="Notice")
+    var position = thisuser.name + '\n' + thisuser.typeO + ' - ' + thisuser.batch.department + ' ' + thisuser.batch.year;
+    if (((quill.getLength()-position.length) == 45)&&quill.getText().slice(0,6)=="Notice")
     {
-        var position = thisuser.name + '\n' + thisuser.typeO + ' - ' + thisuser.batch.department + ' ' + thisuser.batch.year;
+        //var position = thisuser.name + '\n' + thisuser.typeO + ' - ' + thisuser.batch.department + ' ' + thisuser.batch.year;
         quill.setText(document.getElementById("inputTitle").value + '\nMain content of the intended notice.\n' + position);
-        quill.formatLine(1, 2, {'align': 'center', 'header': 'h1'});
+        quill.formatLine(1, 0, {'align': 'center', 'header': 'h1'});
         quill.formatText(document.getElementById("inputTitle").value.length+5, 9, {'bold':true});
         quill.formatText(0, document.getElementById("inputTitle").value.length, {'underline': true, 'bold': true});
         quill.formatLine(1, document.getElementById("inputTitle").value.length + 1, {'align': 'center'});
@@ -90,8 +98,44 @@ function loadAll() {
 }
 
 socket.on('giveAllUsers',(list)=>{
-    console.log(list);
+    console.log("All users",list);
     for (var indx = 0; indx < list.length; ++indx) {
-        console.log(list[indx]);
+        var userDetails=list[indx];
+        //console.log(list[indx].iD);
+        targetgrp.push(userDetails.iD);
+        alltargets.push(userDetails.iD);
+        //var toAdd = '<div class="checkbox"><label><input type="checkbox" name="optionsCheckboxes" checked>'+list[indx].iD +' - ' +list[indx].name+ '</label></div>';
+        var toADD = "<tr onclick='selectRow(this,"+checkNum+")' data-toggle='modal' data-target='#displayModal' style='cursor: pointer'><td><input onclick='flipCheck(this,"+checkNum+")' type='checkbox' name='optionsCheckboxes' class='checkbox' checked></td><td>"+userDetails.iD+"</td><td>"+userDetails.name+"</td> <td>"+userDetails.batch.department+"</td><td>"+userDetails.batch.year+"</td><td>"+userDetails.type+"</td></tr>";
+        checkNum+=1;
+        $("#checkGrp").append(toADD);
+        //console.log(targetgrp);
+        //checkGrp
+        //$("#checkGrp").append(toAdd);
+        //document.getElementById('checkGrp').innerHTML+=toADD;
+
     }
 });
+
+function selectRow(row,id)
+{
+    var firstInput = row.getElementsByTagName('input')[0];
+    flipCheck(firstInput,id);
+    //console.log(alltargets[id]);
+}
+
+function flipCheck(firstInput,id) {
+    firstInput.checked = !firstInput.checked;
+    doTarget(alltargets[id]);
+}
+
+function doTarget(inex){
+    if (targetgrp.indexOf(inex)==-1){
+        targetgrp.push(inex);
+    }
+    else{
+        targetgrp.splice(targetgrp.indexOf(inex),1);
+    }
+    console.log(targetgrp);
+}
+
+
